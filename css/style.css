@@ -1,0 +1,1392 @@
+@font-face {
+    font-family: "yekan";
+    src:url("fonts/Yekan.eot?#") format("eot"),    
+          url("fonts/Yekan.woff") format("woff"),
+          url("fonts/Yekan.ttf") format("truetype"); 
+}
+
+@font-face {
+    font-family: "iransans";
+    src:url("fonts/Sans_medium.eot?#") format("eot"),    
+          url("fonts/Sans_medium.woff") format("woff"),
+          url("fonts/Sans_medium.ttf") format("truetype"); 
+}
+
+@font-face {
+    font-family: "opensans";
+    src:url("fonts/OpenSans-Bold.eot?#") format("eot"),    
+          url("fonts/OpenSans-Bold.woff") format("woff"),
+          url("fonts/OpenSans-Bold.ttf") format("truetype"); 
+}
+
+
+#body-index{
+        margin: auto;
+    height: 100%;
+            background-color: #FAFAFA;
+    }
+
+.english{
+    font-family: "opensans";
+}
+#page-screen{
+    overflow-y:hidden;
+}
+#body-screen,#body-index{
+    font-family: "iransans";
+    height: 100%;
+    width: 100%;
+    margin:auto;
+}
+
+.notif-add{
+    text-align: center;
+    font-family: "yekan";
+    font-size: 20px;
+    background-color: green;
+    margin: auto;
+    margin-top: 10px;
+}
+.notif-close-icon{
+	display: block;
+	width: 20px;
+	height: 20px;
+	position: relative;
+	background-color: red;
+	margin: auto;
+    margin-left: 5px;
+    margin-top: 5px;
+	padding: 2px;
+	border-radius: 50%;
+	text-align: center;
+	color: white;
+	font-weight: normal;
+	font-size: 9px;
+	box-shadow: 0 0 2px #E50F0F;
+	cursor: pointer;
+    vertical-align: middle;
+    float: left;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+.first-class{
+    text-align: center;
+    float: left;
+    height: 48%;
+    width: 20%;
+    padding: auto;
+    margin:auto;
+    border-radius: 4px;
+    font-size: 24;
+}
+.header{
+    height: auto;
+    margin: auto;
+    padding: auto;
+    overflow: hidden;
+}
+.header p{
+    margin: auto;
+    margin-top: 2px;
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    text-align: center;
+}
+.col-1,.col-2,.col-3,.col-4,.col-5{
+    width: 20%;
+    float: left;
+    height: 96%;
+    
+}
+#floor-1{
+    background-color: #FFDFBA;
+    
+}
+.floor-1{
+    background-color: #BAE1FF;
+    
+    width: 100%;
+    margin: auto;
+    padding: auto;
+    height: 50%;
+    
+}
+#floor-2{
+    background-color: #BAFFC9;
+}
+.floor-2{
+    background-color: #FFF8BA;
+    
+    width: 100%;
+    height: 50%;
+    display: inline-block;
+    margin: auto;
+    padding: auto;
+}
+#floor-3{
+    background-color: #FFB3BA;
+}
+.floor-3{
+    background-color: #FFB3BA;
+    margin: auto;
+    padding: auto;
+    width: 100%;
+    height: 100%;
+}
+#floor-4{
+    background-color: #FFFFBA;
+}
+.floor-4{
+    background-color: #FFF8BA;
+}
+
+.floor-4{
+    height: 50%;
+    width: 100%;
+    margin: auto;
+    padding: auto;
+}
+#floor-5{
+    background-color: #BAE1FF;
+}
+.floor-b1{
+    background-color: #FFDFBA;
+    border-radius: 5px;
+    width: 100%;
+    height: 80%;
+    float: right;
+}
+#floor-6{
+    background-color: #BAE1FF;
+}
+.floor-6{
+    background-color: #EECBFF;
+    width: 100%;
+    height: 50%;
+    padding: auto;
+}
+#floor-7{
+    background-color: #FFFFBA;
+}
+.floor-7{
+    background-color: #BAFFC9;
+    width: 100%;
+    height: 20%;
+    padding: auto;
+}
+#floor-8{
+    background-color: #EECBFF;
+}
+.floor-8{
+    background-color: #BAE1FF;
+    
+    width: 100%;
+    height: 40%;
+    padding: auto;
+}
+#floor-9{
+    background-color: #FFDFBA;
+}
+.floor-9{
+    background-color: #FFDFBA;
+    width: 100%;
+    height: 40%;
+    float: left;
+    
+}
+#floor-10{
+    background-color: #BAFFC9;
+}
+.floor-b3{
+    background-color: #BAFFC9;
+    width: 100%;
+    height: 20%;
+    float: right;
+    display: block;
+}
+#floor-1 .second-class{
+    
+background-color: #FFF4E7;
+    
+}
+.floor-1 .second-class{
+    background-color: #E7F5FF;
+    height: 90%;
+}
+#floor-2 .second-class{
+    
+background-color: #FFFDE5;
+    
+}
+.floor-2 .second-class{
+    background-color: #FFFFE7;
+    height: 90%;
+}
+#floor-3 .second-class{
+    
+background-color: #FFE5E7;
+}
+
+.floor-3 .second-class{
+    background-color: #FFE5E7;
+    height: 95%;
+    font-size: 14.5px;
+}
+#floor-4 .second-class{
+    
+background-color: #FFFDE5;
+}
+
+.floor-4 .second-class{
+    background-color: #FFFFE7;
+    height: 90%;
+}
+#floor-5 .second-class{
+    
+background-color: #E7F5FF;
+}
+.floor-b1 .second-class{
+    background-color: #FFF4E7;
+    
+    height: 93.5%;
+}
+#floor-6 .second-class{
+    
+background-color: #E7F5FF;
+}
+.floor-6 .second-class{
+    background-color: #F9EDFF;
+    
+    height: 90%;
+}
+#floor-7 .second-class{
+ background-color: #E7FFEC;   
+
+}
+.floor-7 .second-class{
+    
+    background-color: #E7FFEC;
+    height: 75%;
+}
+#floor-8 .second-class{
+    
+background-color: #F9EDFF;
+}
+.floor-8 .second-class{
+    background-color: #E7F5FF;
+    height: 87%;
+}
+#floor-9 .second-class{
+    
+background-color: #FFF4E7;
+}
+.floor-9 .second-class{
+    background-color: #FFF4E7;
+    height: 87%;
+}
+#floor-10 .second-class{
+    
+background-color: #E7FFEC;
+}
+.floor-b3 .second-class{
+    background-color: #E7FFEC;
+    height: 75%;
+}
+.second-class{
+    text-align: right;
+    width: 96%;
+    border-radius: 5px;
+    direction: rtl;
+    margin: auto;
+    padding: auto;
+}
+.second-class p{
+    height: auto;
+    margin: auto;
+    padding-top: 2.8%;
+    margin-right: 5px;
+    color: #6C7077;
+}
+marquee{
+    margin:auto;
+    border:none;
+    padding: auto;
+    color: #2D343E;
+    height: auto;
+    color: #6C7077;
+}
+
+.form {
+  position: relative;
+  background-color: cornflowerblue;
+  max-width: 360px;
+  margin: 0 auto auto;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  border-radius: 5px;
+}
+.form #username,#password {
+  font-family: "iransans";
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form .checkbox{
+    text-align: right;
+    font-size: 13px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+.form #login-button {
+  font-family: "iransans";
+  text-transform: uppercase;
+  outline: 0;
+  background-color:green;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+    margin: 4px;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background-color: red;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.login-page {
+  width: 360px;
+  padding: auto;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+#body-login{
+  background-color: whitesmoke;
+  font-family: "iransans";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;      
+  overflow-y: hidden;
+    margin: auto;
+    padding: auto;
+  margin-bottom: 1000px;
+}
+#login-head{
+    text-align: center;
+    background-color:white;
+    width: 360px;
+    font-size: 36px;
+    color: cornflowerblue;
+    border-radius: 5px;
+}
+#login-footer p{
+    vertical-align: center;
+    margin:auto;
+}
+#login-footer{
+    color: white;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    background-color: #1976D2;
+    position:fixed;
+    font-size: 17px;
+    margin-top: 100px;
+    height: auto;
+}
+.form #error-message{
+    color: red;
+    font-size: 14px;
+    height: 14px;
+}
+
+#information-email #email-bar{
+    text-align: right;
+    font-family: "yekan";
+    padding-right: 2px;
+    width: 50%;
+    margin: auto;
+    font-size: 20px;
+    margin-bottom: 70px;
+    margin-top: 2px;
+}
+#information-email #submit-button{
+    text-align: center;
+    font-family: "yekan";
+    font-size: 20px;
+    background-color: green;
+    margin: auto;
+}
+
+#information-name #name-bar{
+    text-align: right;
+    font-family: "yekan";
+    padding-right: 2px;
+    width: 50%;
+    margin: auto;
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-top: 2px;
+    
+}
+#menu{
+    background-color: #1976D2;
+    color: white;
+    width: 100%;
+    height: 52px;
+    
+}
+#menu #search input{
+    float: left;
+    margin: auto;
+    margin-top: 13px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    background-color: #1976D2;
+    border-style: none;
+    margin-left: 24%;
+    color: white;
+    width: 3%;
+}
+.topnav {
+    overflow: hidden;
+    text-align: center;
+    margin-right: 25%;
+    font-family: "iransans";
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    
+}
+
+/* Change the color of links on hover */
+.topnav a:not(:last-child):hover {
+    background-color: #2196F3;
+    color: #2D343E;
+}
+.topnav a.icon{
+    display: none;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+
+
+
+
+
+#list-page{
+    text-align: center;
+    font-size: 42px;
+    font-family: "iransans";
+}
+#list-page a{
+    text-decoration: none;
+    color:burlywood;
+}
+.banner{
+    text-align: center;
+    background-color: #2196F3;
+    height: 120px;
+    width: 100%;
+    color: white;
+}
+.banner #topic{
+    font-size: 30px;
+    display: inline-block;
+    margin-bottom: 60px;
+    vertical-align: middle;
+}
+.banner #left-image,#right-image{
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 10px;
+    display: inline-block;
+}
+#body-index #page-body{
+    text-align: center;
+    margin-top: 3%;
+
+}
+#menu-item{
+    background-color: white;
+    height: 137px;
+    width: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 25px;
+    display: inline-block;
+    opacity:1;
+    transition: opacity 1s;
+    margin-bottom: 50px;
+    box-shadow: 0 0 5px gray;
+    border-radius: 5px;
+    
+}
+
+#menu-item #menu-icon{
+    margin: auto;
+    padding: auto;
+    padding-top: 10px;
+}
+#menu-item:hover{
+    opacity: 0.3;
+}
+#menu-item a{
+    text-decoration: none;
+    color: #6C7077;
+}
+
+
+
+
+#menu-text{
+    width: 200px;
+    height: 30px;
+    background: #F5F5F5;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+}
+#map,#map-prev{
+    text-align: center;
+    margin-top: 25px;
+ 
+}
+#map-prev img{
+    height: 300px;
+    width: 400px;
+    
+}
+#map img{
+
+    height: 55%;
+    width: 70%;
+}
+
+/* When the input field gets focus, change its width to 100% */
+
+#page-body #table-banner,#map-banner{
+    width: 70%;
+    border:1px solid #2D343E;
+    border-radius: 6px;
+    margin: auto;
+    margin-bottom: 2%;
+    color: white;
+    background-color: #2196F3;
+    
+}
+#page-body #table-banner,#map-banner p{
+    margin-top:2px;
+    vertical-align: middle;
+}
+
+#menu #search input[type=text]:hover {
+   cursor: pointer;
+    
+}
+#menu #search input[type=text]:focus {
+    width: 51%;
+    font-family: "yekan";
+    text-align: right;
+    
+}
+#week-table table{
+    table-layout: fixed;
+    width: 70%;
+    margin: auto;
+    border: 1px solid #2D343E;
+    border-collapse: collapse;
+    background-color: white;
+}
+#week-table td{
+    width: 10%;
+    text-align: center;
+    overflow:hidden;
+    border: 1px solid #2D343E;
+    border-collapse: collapse;
+    color: #6C7077;
+}
+.table tr:hover{
+    cursor: pointer;
+    background-color: azure;
+}
+.table td a{
+text-decoration: none;
+}
+#week-table{
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+#week-table .fix td{
+    height: 20px;
+    text-align: center;
+}
+#week-table .place td{
+    height: 50px;
+    background-color: #F5F5F5;
+}
+#week-table .hour td{
+    height: 60px;
+}
+#mobile-table{
+    display: none;
+    vertical-align: middle;
+    text-align: center;
+}
+#mobile-table table tr td{
+    border:1px solid #2D343E;
+    border-collapse: collapse;
+    text-align: center;
+}
+#mobile-table td{
+    overflow: hidden;
+    vertical-align: middle;
+    color: #6C7077;
+}
+#mobile-table table{
+    table-layout: fixed;
+    margin: auto;
+    width: 95%;
+}
+.rotate-hour div{
+    transform: rotate(90deg);
+    text-align: center;
+}
+
+#mobile-table td{
+    height: 200px;
+    width: auto;
+    margin: auto;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 10px
+}
+#mobile-table .rotate-hour{
+    width: 100px;
+}
+#mobile-table .place{
+    border-top: 1px dashed #2D343E;
+    height: 30%;
+}
+#mobile-table .fix td{
+    height: 10px;
+}
+#mobile-table .place p{
+    margin: auto;
+    padding: auto;
+}
+#page-body .floor-table table{
+    border:1px black solid;
+    border-radius: 20px;
+}
+
+#page-body .card{
+    border:1px black solid;
+    border-radius: 20px;
+}
+
+#page-body .floor-table th{
+    text-align: center;
+    font-size: 22px;
+    background-color: #2196F3;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    color: white;
+}
+#page-body .floor-table td{
+    font-size: 20px;
+    height: 40px;
+    width: 380px;
+    padding-right: 9px;
+    text-align: right;
+    color: #6C7077;
+}
+#page-body .card{
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 12px;
+    margin-bottom: 30px;
+}
+#page-body .card img{
+    width: 250px;
+    height: 250px;
+}
+#page-body .card .spinner-title{
+    background-color: greenyellow;
+    margin-top: 0px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+#page-body .card .spinner-price{
+    font-size: 12px;
+    line-height: 3px;
+    font-family: "yekan";
+}
+#page-body .floor-tables{
+    margin: auto;
+    margin-bottom: 100px;
+}
+.table-search input{
+    font-size: 20px;
+    width: 80%;
+    text-align: right;
+    padding-right: 10px;
+    font-family: "yekan";
+    margin :auto;
+    border: 1px solid #2D343E;
+    padding: auto;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+#page-body .notif .notif-body{
+    border: 1px solid #2D343E;
+    border-top: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align:justify;
+    direction: ltr;
+    width: 50%;
+    padding: 8px;
+    margin: 0 auto auto auto;
+    color: #6C7077;
+    background-color: white;
+    height: 20%;
+    overflow-y: scroll;
+}
+#page-body .notif .notif-body p{
+    direction: rtl;
+    margin: auto;
+}
+#page-body .notif .notif-header{
+    border: 1px solid black;
+    border-bottom: none;
+    width: 50%;
+    height: 3%;
+    margin: auto;
+    margin-bottom: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 8px;
+    margin-top: 10px;
+    text-align: right;
+    background-color: #2196F3;
+    color: white;
+    
+}
+#page-body .notif .notif-header p{
+    
+margin: auto;
+    
+}
+#page-body .notif{
+    margin-bottom: 100px;
+}
+#page-body .admin-notif
+{
+    margin-bottom: 100px;
+}
+#page-body .admin-notif form{
+    border: 1px solid #2D343E;
+    border-collapse: collapse;
+    width: 794px;
+    margin: auto;
+    padding: auto;
+    vertical-align: super;
+    height: 200px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    text-align: right;
+}
+#page-body .admin-notif form.hide{
+    display: none;
+}
+#page-body .admin-notif form textarea{
+    height: 100%;
+    width: 95%;
+    margin:auto;
+    border: none;
+    direction: rtl;
+    text-align: right;
+    vertical-align: text-top;
+    padding-bottom: 170px;
+    padding-right: 10px;
+    font-size: 22;
+    font-family: "yekan";
+    overflow: hidden;
+}
+#page-body .table table{
+    text-align: right;
+    border-radius: 10px;
+    margin: auto;
+    table-layout: fixed;
+    width: 50%;
+    background: white;
+}
+
+.table td{
+    border-right: 1px solid black;
+    border-spacing: 0;
+    border-bottom: 1px solid black;
+    overflow: hidden;
+    color: #6C7077;
+    text-align: center;
+    font-size: 14px;
+
+}
+.table th{
+    border-right: 1px solid black;
+    border-spacing: 0;
+    border-bottom: 1px solid black;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    background-color: #2196F3;
+}
+#page-body .table tr td:first-child{
+    width: 10%;
+    padding: 6px;
+    border-left: 1px solid black;
+    
+}
+#page-body .table tr th:first-child{
+    width: 20%;
+    padding: 6px;
+    border-left: 1px solid black;
+    
+}
+
+#page-body .table tr:first-child th{
+    border-top: 1px solid black;
+    
+}
+#page-body .table tr:first-child th:first-child{
+    border-top-left-radius: 5px;
+    
+}
+#page-body .table tr:first-child th:last-child{
+    border-top-right-radius: 5px;
+    
+}
+
+#page-body .table tr:last-child td:last-child{
+    border-bottom-right-radius: 5px;
+    
+}
+#page-body .table tr:last-child td:first-child{
+    border-bottom-left-radius: 5px;
+    
+}
+#page-body .table tr td:not(:first-child){
+    width: 20%;
+    padding: 6px;
+}
+#page-body .table tr th:not(:first-child){
+    width: 20%;
+    padding: 6px;
+}
+#page-body .table{
+    margin: auto;
+    margin-top: 8px;
+    margin-bottom: 100px;
+}
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0px; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color: white;
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    text-align: right;
+    background-color: cornflowerblue;
+    border-left: 1px solid #2D343E;
+}
+
+/* The navigation menu links */
+.sidenav #user-role{
+    padding: auto;
+    text-decoration: none;
+    font-size: 22px;
+    color: #2D343E;
+    display: block;
+    transition: 0.1s;
+    background-color: cornflowerblue;
+    height: 75px;
+    border-bottom: 2px groove #2D343E;
+}
+
+.sidenav #user-role img{
+    height: 44px;
+    width: 44px;
+    margin-right: 22px;
+    margin-left: 10px;
+}
+
+.sidenav img{
+    height: 44px;
+    width: 44px;
+}
+.sidenav a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #2D343E;
+    display: block;
+    transition: 0.1s;
+}
+.sidenav a:not(:first-child){
+    margin-right: 20px;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav  #adicon {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 30px;
+    margin-left: 50px;
+    text-decoration: none;
+}
+
+@import "compass/css3";
+
+.table-editable {
+  position: relative;
+    margin: auto;
+    width: 80%;
+    margin-bottom: 80px;
+    
+  
+}
+.table-editable tr td th {
+  text-align: right;
+  
+}
+
+.table-editable td{
+    margin: auto;
+    overflow:hidden;
+}
+
+.table-editable table{
+       table-layout:fixed;
+ 
+}
+
+.table-editable .sign{
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+.table-remove {
+  color: #700;
+  cursor: pointer;
+  
+  &:hover {
+    color: #f00;
+  }
+}
+
+.table-up, .table-down {
+  color: #007;
+  cursor: pointer;
+  
+  &:hover {
+    color: #00f;
+  }
+}
+
+.table-add {
+  color: white;
+  cursor: pointer;
+  top: 8px;
+  right: 0;
+   border: 1px solid #2D343E;
+  padding: 10px;
+    background-color: green;
+    border-radius: 3px;
+    margin-left: 5px;
+  &:hover {
+    color: #0b0;
+  }
+}
+
+#search-message{
+    display: none;
+    font-size: 25px;
+}
+
+
+
+@media all and (max-width: 1024px) {
+    
+   #menu #search input[type=text]:focus {
+    width: 90%;
+    height: 53px;
+    
+} 
+    .notif-close-icon{
+	width: 40px;
+	height: 40px;
+	font-size: 20;
+}
+    
+    
+    #page-body .admin-notif form textarea{
+    font-size: 50;
+}
+    
+    
+    #page-body .admin-notif form{
+    width: 90%;
+    height: 400px;
+}
+    .notif-add{
+        font-size: 40;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 100px;
+    margin-top: 15px;
+}
+    #information-email #email-bar{
+    font-size: 40;
+    width: 90%;
+    margin: auto;
+    border: 2px black solid;
+}
+#information-email #submit-button{
+    font-size: 40;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 100px;
+    margin-top: 15px;
+}
+    
+    #information-name #name-bar{
+        font-size: 40;
+        width: 90%;
+        margin: auto;
+        border: 2px black solid;
+        margin-bottom: 15px;
+    }
+    
+    #search-message{
+    font-size: 40px;
+}
+    .sidenav  #adicon {
+    font-size: 50px;
+
+}
+    .sidenav a{
+        font-size: 25;
+    }
+    
+    
+    .table-add span {
+        display: none;
+    }
+    .table-add{
+        font-size: 25;
+    }
+    .table-editable table{
+      width: 80%;
+        }  
+    
+    #page-body .table table {
+    width: 95%;
+    margin:auto;
+    table-layout: fixed;
+    }
+    #page-body .notif .notif-body{
+    width: 90%;
+    font-size: 40px;
+    margin: auto;
+    margin-top: 15px;
+        padding: 25;
+        
+    }
+    #page-body .notif .notif-header{
+         width: 90%;
+    font-size: 40px;
+    margin: auto;
+    margin-top: 15px;
+        padding: 25;
+    }
+    #page-body .table-search input{
+        font-size: 35;
+        width: 95%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 29px;
+        margin: auto;
+        margin-top: 25px;
+        margin-bottom: 20px;
+       
+    }
+    
+    #page-body .floor-table td{
+        font-size: 40;
+        padding: 20px;
+    }
+      #page-body .floor-table th{
+        font-size: 45;
+           padding: 20px
+    }
+    
+       #page-body .floor-table table{
+           margin: auto;
+          width: 96%;
+           table-layout: fixed;
+           margin-left: 1.5%;
+           margin-bottom: 30px; 
+    }
+    #page-body .card{
+        margin: auto;
+          width: 96%;
+           table-layout: fixed;
+           margin-left: 1.5%;
+           margin-bottom: 30px; 
+    }
+       #page-body .card .spinner-title{
+        font-size: 45;
+           padding: 20px
+    }
+    #page-body .card .spinner-price{
+        font-size: 25;
+        padding: 20px;
+    }
+    #page-body .card img{
+        width: 400px;
+        height: 400px;
+    }
+    
+    
+    
+    
+    #page-body #table-banner,#map-banner{
+    font-size: 35px;
+    width: 95%;
+    }
+    #page-body #mobile-table{
+        display: none;
+        margin-bottom: 70px;
+    }
+    #page-body #week-table table{
+        width: 95%;
+        
+    }
+    
+    #week-table td{
+    width: auto;
+    text-align: center;
+    overflow:hidden;
+    border: 1px solid #2D343E;
+    border-collapse: collapse;
+    color: #6C7077;
+    font-size: 12px;
+}
+    
+    #menu{
+        height: 100px;
+ 
+    }
+    #menu #search input{
+        width: 20%;
+        margin-top: 23px;
+        font-size: 50px;
+        border-style: none;
+        margin-left: 25px;
+    }
+    
+    #page-body{
+    }
+    #body-index #menu-item i{
+        display: none;
+    }
+    #body-index #menu-item{
+        width: 95%;
+        margin: auto;
+        margin-bottom: 15px;
+        text-align: center;
+        display:inline-block;
+        font-size: 45px;
+        border-radius: 8px;
+        height: auto;
+    }
+    #body-index #menu-item:last-child{
+        margin-bottom: 100px;
+    }
+    #body-index #menu-text{
+        text-align: center;
+        background-color: white;
+        display: inline;
+    }
+     #body-index p{
+        margin-top: 70px;
+    }
+    .banner #left-image img{
+        display: none;
+    }
+    .banner #right-image img{
+        display: none;
+    }
+    #body-index .banner{
+        width: 100%;
+        height: auto;
+        vertical-align: center;
+    }
+    #body-index .banner #topic{
+        font-size: 70px;
+        margin-bottom: 20px;
+        vertical-align: middle;
+    }
+    #body-index #menu{
+        width: 100%;
+    }
+    #body-index #map,#map-prev{
+        height: auto;
+    }
+    #body-index #map-prev img{
+    height: auto;
+    width: 95%;
+    
+}
+    #body-index #map img{
+        width: 95%;
+        margin-bottom: 100px;
+    }
+  .topnav a {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+    font-size: 50px;
+    
+  }
+    .topnav{
+        margin-right: auto;
+    }
+  .topnav.responsive {position:relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 50px;
+  }
+  
+  .topnav.responsive a:not(:last-child) {
+    float: none;
+    display: block;
+    text-align: right;
+    font-size: 45px;
+    margin-right: 60px;
+  }
+
+   .form #error-message{
+    color: red;
+    font-size: 50px;
+        } 
+    .login-page{
+        width: 100%;
+        padding: auto;
+        margin: auto;
+        height: auto;
+    }
+    #login-head{
+        width: 100%;
+        font-size:60px;
+        text-align: center;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+    .form {
+  position: relative;
+  background-color: cornflowerblue;
+  max-width: 100%;
+  text-align: center;
+  margin :auto;
+
+  border-radius: 5px;
+}
+    .form #username,#password{
+  font-size: 42px;
+  padding:27px;
+        
+}
+.form #login-button {
+  font-family: "iransans";
+  text-transform: uppercase;
+  outline: 0;
+  background-color:green;
+  width: 100%;
+  border: 0;
+  padding: 30px;
+  color: #FFFFFF;
+  font-size: 36px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  margin: 4px;
+}
+.form .checkbox label{
+font-size: 30px;
+    margin-right: 20px;
+
+}
+    .form .checkbox input{
+        transform: scale(3);
+    }
+    #login-footer{
+        font-size: 30px;
+        height: auto;
+    }
+     #login-footer p{
+        margin: auto;
+        padding: auto;
+    }
+    #body-login{
+        background-color: cornflowerblue;
+        overflow-y: auto;
+        margin-bottom: 100px;
+    }
+    #menu-item:hover{
+    opacity: 1;
+}
+}
