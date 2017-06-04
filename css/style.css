@@ -394,7 +394,7 @@ marquee{
     color: #2D343E;
     height: auto;
     color: #6C7077;
-    margin-top: 5px;
+    margin-top: 10px;
     font-family: "yekan";
 }
 
@@ -487,7 +487,7 @@ marquee{
     width: 100%;
     bottom: 0;
     text-align: center;
-    background-color: RGB(0,255,255);
+    background-color: #4FC3F7;
     position:fixed;
     font-size: 17px;
     margin-top: 100px;
@@ -529,7 +529,7 @@ marquee{
     
 }
 #menu{
-    background-color: RGB(0,255,255);
+    background-color: #4FC3F7;
     color: black;
     width: 100%;
     height: 52px;
@@ -791,10 +791,6 @@ text-decoration: none;
     border-radius: 20px;
 }
 
-#page-body .card{
-    border:1px black solid;
-    border-radius: 20px;
-}
 #page-body .contact{
     text-align: right;
     margin-right: 10%;
@@ -821,6 +817,8 @@ text-decoration: none;
     color: #6C7077;
 }
 #page-body .card{
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+    border-radius: 5px;
     display: inline-block;
     margin-top: 10px;
     margin-left: 30px;
@@ -831,16 +829,16 @@ text-decoration: none;
     height: 230px;
 }
 #page-body .card .spinner-title{
-    background-color: RGB(0,255,255);
+    background-color: #4FC3F7;
     margin-top: 0px;
-    border-top-left-radius: 18px;
-    border-top-right-radius: 18px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 #page-body .card .spinner-status{
 
     margin-bottom: 0px;
-    border-bottom-left-radius: 18px;
-    border-bottom-right-radius: 18px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 .spinner-status.available{
         background-color: lawngreen;
@@ -1298,7 +1296,7 @@ margin: auto;
            padding: 20px
     }
     #page-body .card .spinner-price{
-        font-size: 25;
+        font-size: 37px;
         padding: 20px;
     }
     #page-body .card img{
