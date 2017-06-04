@@ -19,6 +19,84 @@
           url("fonts/OpenSans-Bold.ttf") format("truetype"); 
 }
 
+#spinner-image {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#spinner-image:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption { 
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 #body-index{
         margin: auto;
@@ -316,6 +394,8 @@ marquee{
     color: #2D343E;
     height: auto;
     color: #6C7077;
+    margin-top: 5px;
+    font-family: "yekan";
 }
 
 .form {
@@ -403,11 +483,11 @@ marquee{
     margin:auto;
 }
 #login-footer{
-    color: white;
+    color: black;
     width: 100%;
     bottom: 0;
     text-align: center;
-    background-color: #1976D2;
+    background-color: RGB(0,255,255);
     position:fixed;
     font-size: 17px;
     margin-top: 100px;
@@ -449,8 +529,8 @@ marquee{
     
 }
 #menu{
-    background-color: #1976D2;
-    color: white;
+    background-color: RGB(0,255,255);
+    color: black;
     width: 100%;
     height: 52px;
     
@@ -464,13 +544,13 @@ marquee{
     background-color: #1976D2;
     border-style: none;
     margin-left: 24%;
-    color: white;
+    color: black;
     width: 3%;
 }
 .topnav {
     overflow: hidden;
     text-align: center;
-    margin-right: 25%;
+    margin-right: 10%;
     font-family: "iransans";
 }
 
@@ -478,7 +558,7 @@ marquee{
 .topnav a {
     float: right;
     display: block;
-    color: #f2f2f2;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -512,16 +592,19 @@ marquee{
 }
 .banner{
     text-align: center;
-    background-color: #2196F3;
+    background-color: rgb(171, 250, 250);
     height: 120px;
     width: 100%;
-    color: white;
+    color: black;
 }
 .banner #topic{
     font-size: 30px;
     display: inline-block;
     margin-bottom: 60px;
     vertical-align: middle;
+}
+.banner #topic img{
+    width: 100%;
 }
 .banner #left-image,#right-image{
     margin-right: 10%;
@@ -531,7 +614,7 @@ marquee{
 }
 #body-index #page-body{
     text-align: center;
-    margin-top: 3%;
+    margin-top: 1%;
 
 }
 #menu-item{
@@ -732,18 +815,30 @@ text-decoration: none;
 #page-body .card{
     display: inline-block;
     margin-top: 10px;
-    margin-left: 12px;
-    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-bottom: 40px;
 }
 #page-body .card img{
-    width: 250px;
-    height: 250px;
+    width: 230px;
+    height: 230px;
 }
 #page-body .card .spinner-title{
-    background-color: greenyellow;
+    background-color: RGB(0,255,255);
     margin-top: 0px;
     border-top-left-radius: 18px;
     border-top-right-radius: 18px;
+}
+#page-body .card .spinner-status{
+
+    margin-bottom: 0px;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+.spinner-status.available{
+        background-color: lawngreen;
+}
+.spinner-status.not-available{
+        background-color: red;
 }
 #page-body .card .spinner-price{
     font-size: 12px;
@@ -761,6 +856,8 @@ text-decoration: none;
     padding-right: 10px;
     font-family: "yekan";
     margin :auto;
+    margin-top: 0px;
+    margin-bottom: 20px;
     border: 1px solid #2D343E;
     padding: auto;
     border-radius: 5px;
@@ -1183,10 +1280,14 @@ margin: auto;
           width: 96%;
            table-layout: fixed;
            margin-left: 1.5%;
-           margin-bottom: 30px; 
+           margin-bottom: 70px; 
     }
        #page-body .card .spinner-title{
         font-size: 45;
+           padding: 20px
+    }
+    #page-body .card .spinner-status{
+        font-size: 41;
            padding: 20px
     }
     #page-body .card .spinner-price{
