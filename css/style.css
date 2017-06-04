@@ -823,6 +823,7 @@ text-decoration: none;
     margin-top: 10px;
     margin-left: 30px;
     margin-bottom: 40px;
+    height: auto;
 }
 #page-body .card img{
     width: 230px;
@@ -847,7 +848,6 @@ text-decoration: none;
         background-color: red;
 }
 #page-body .card .spinner-price{
-    font-size: 12px;
     line-height: 3px;
 }
 #page-body .floor-tables{
