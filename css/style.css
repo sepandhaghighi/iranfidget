@@ -25,6 +25,9 @@
     transition: 0.3s;
 }
 
+.break{
+    display: none;
+}
 #spinner-image:hover {opacity: 0.7;}
 
 /* The Modal (background) */
@@ -1501,6 +1504,9 @@ font-size: 30px;
     .modal-content {
         width: 100%;
     }
+    #caption {
+    font-size: 45;
+}
     marquee{
         font-size: 37;
     }
@@ -1511,5 +1517,12 @@ font-size: 30px;
 }
     .fa.fa-address-card{
         display: none;
+    }
+    .close {
+        font-size: 60;
+    }
+    
+    .break{
+        display: block;
     }
 }
