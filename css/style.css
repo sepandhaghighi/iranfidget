@@ -863,7 +863,7 @@ text-decoration: none;
     margin :auto;
     margin-top: 0px;
     margin-bottom: 20px;
-    border: 1px solid #2D343E;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
     padding: auto;
     border-radius: 5px;
     vertical-align: middle;
@@ -1505,8 +1505,11 @@ font-size: 30px;
         font-size: 37;
     }
     #page-body .contact{
-    font-size: 40;
+    font-size: 35;
         margin-right: 5%;
         margin-bottom: 70px;
 }
+    .fa.fa-address-card{
+        display: none;
+    }
 }
