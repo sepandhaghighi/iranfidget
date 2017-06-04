@@ -568,7 +568,7 @@ marquee{
 
 /* Change the color of links on hover */
 .topnav a:not(:last-child):hover {
-    background-color: #2196F3;
+    background-color: rgb(171, 250, 250);
     color: #2D343E;
 }
 .topnav a.icon{
@@ -795,6 +795,14 @@ text-decoration: none;
     border:1px black solid;
     border-radius: 20px;
 }
+#page-body .contact{
+    text-align: right;
+    margin-right: 10%;
+    margin-top: 7%;
+}
+#page-body .contact a{
+    text-decoration: none;
+}
 
 #page-body .floor-table th{
     text-align: center;
@@ -843,7 +851,6 @@ text-decoration: none;
 #page-body .card .spinner-price{
     font-size: 12px;
     line-height: 3px;
-    font-family: "yekan";
 }
 #page-body .floor-tables{
     margin: auto;
@@ -1416,8 +1423,11 @@ margin: auto;
     float: none;
     display: block;
     text-align: right;
-    font-size: 45px;
+    font-size: 35px;
     margin-right: 60px;
+  }
+    .topnav.responsive a:first-child {
+    margin-top: 60px;
   }
 
    .form #error-message{
@@ -1489,5 +1499,16 @@ font-size: 30px;
     }
     #menu-item:hover{
     opacity: 1;
+}
+    .modal-content {
+        width: 100%;
+    }
+    marquee{
+        font-size: 37;
+    }
+    #page-body .contact{
+    font-size: 40;
+        margin-right: 5%;
+        margin-bottom: 70px;
 }
 }

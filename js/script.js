@@ -67,6 +67,8 @@ $(document).ready(function(){
     $("#mobile-table").persiaNumber();
     $(".card").persiaNumber();
     $(".farsi").persiaNumber();
+    $(".contact").persiaNumber();
+    $(".spinner-price").persiaNumber();
 });
 
 $(window).scroll(function() {
