@@ -666,38 +666,14 @@ marquee{
     margin: auto;
     padding: auto;
 }
-#map,#map-prev{
-    text-align: center;
-    margin-top: 25px;
- 
-}
-#map-prev img{
-    height: 300px;
-    width: 400px;
-    
-}
-#map img{
 
-    height: 55%;
-    width: 70%;
-}
+
+
 
 /* When the input field gets focus, change its width to 100% */
 
-#page-body #table-banner,#map-banner{
-    width: 70%;
-    border:1px solid #2D343E;
-    border-radius: 6px;
-    margin: auto;
-    margin-bottom: 2%;
-    color: white;
-    background-color: #2196F3;
-    
-}
-#page-body #table-banner,#map-banner p{
-    margin-top:2px;
-    vertical-align: middle;
-}
+
+
 
 #menu #search input[type=text]:hover {
    cursor: pointer;
@@ -1316,10 +1292,7 @@ margin: auto;
     
     
     
-    #page-body #table-banner,#map-banner{
-    font-size: 35px;
-    width: 95%;
-    }
+  
     #page-body #mobile-table{
         display: none;
         margin-bottom: 70px;
@@ -1396,18 +1369,8 @@ margin: auto;
     #body-index #menu{
         width: 100%;
     }
-    #body-index #map,#map-prev{
-        height: auto;
-    }
-    #body-index #map-prev img{
-    height: auto;
-    width: 95%;
-    
-}
-    #body-index #map img{
-        width: 95%;
-        margin-bottom: 100px;
-    }
+
+
   .topnav a {display: none;}
   .topnav a.icon {
     float: right;
@@ -1531,4 +1494,10 @@ font-size: 30px;
     .break{
         display: block;
     }
+    
+    #map {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 70px;
+       }
 }
