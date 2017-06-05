@@ -229,98 +229,6 @@ marquee{
 
 }
 
-
-#week-table table{
-    table-layout: fixed;
-    width: 70%;
-    margin: auto;
-    border: 1px solid #2D343E;
-    border-collapse: collapse;
-    background-color: white;
-}
-#week-table td{
-    width: 10%;
-    text-align: center;
-    overflow:hidden;
-    border: 1px solid #2D343E;
-    border-collapse: collapse;
-    color: #6C7077;
-}
-.table tr:hover{
-    cursor: pointer;
-    background-color: azure;
-}
-.table td a{
-text-decoration: none;
-}
-#week-table{
-    text-align: center;
-    margin-bottom: 80px;
-}
-
-#week-table .fix td{
-    height: 20px;
-    text-align: center;
-}
-#week-table .place td{
-    height: 50px;
-    background-color: #F5F5F5;
-}
-#week-table .hour td{
-    height: 60px;
-}
-#mobile-table{
-    display: none;
-    vertical-align: middle;
-    text-align: center;
-}
-#mobile-table table tr td{
-    border:1px solid #2D343E;
-    border-collapse: collapse;
-    text-align: center;
-}
-#mobile-table td{
-    overflow: hidden;
-    vertical-align: middle;
-    color: #6C7077;
-}
-#mobile-table table{
-    table-layout: fixed;
-    margin: auto;
-    width: 95%;
-}
-.rotate-hour div{
-    transform: rotate(90deg);
-    text-align: center;
-}
-
-#mobile-table td{
-    height: 200px;
-    width: auto;
-    margin: auto;
-    display: table-cell;
-    vertical-align: middle;
-    font-size: 10px
-}
-#mobile-table .rotate-hour{
-    width: 100px;
-}
-#mobile-table .place{
-    border-top: 1px dashed #2D343E;
-    height: 30%;
-}
-#mobile-table .fix td{
-    height: 10px;
-}
-#mobile-table .place p{
-    margin: auto;
-    padding: auto;
-}
-#page-body .floor-table table{
-    border:1px black solid;
-    border-radius: 20px;
-}
-
 #page-body .contact{
     text-align: right;
     margin-right: 10%;
@@ -330,22 +238,6 @@ text-decoration: none;
     text-decoration: none;
 }
 
-#page-body .floor-table th{
-    text-align: center;
-    font-size: 22px;
-    background-color: #2196F3;
-    border-top-left-radius: 18px;
-    border-top-right-radius: 18px;
-    color: white;
-}
-#page-body .floor-table td{
-    font-size: 20px;
-    height: 40px;
-    width: 380px;
-    padding-right: 9px;
-    text-align: right;
-    color: #6C7077;
-}
 #page-body .card{
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
     border-radius: 5px;
@@ -381,10 +273,6 @@ text-decoration: none;
     line-height: 3px;
     font-family: "yekan";
 }
-#page-body .floor-tables{
-    margin: auto;
-    margin-bottom: 100px;
-}
 .table-search input{
     font-size: 20px;
     width: 80%;
@@ -399,288 +287,11 @@ text-decoration: none;
     border-radius: 5px;
     vertical-align: middle;
 }
-#page-body .notif .notif-body{
-    border: 1px solid #2D343E;
-    border-top: none;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    text-align:justify;
-    direction: ltr;
-    width: 50%;
-    padding: 8px;
-    margin: 0 auto auto auto;
-    color: #6C7077;
-    background-color: white;
-    height: 20%;
-    overflow-y: scroll;
-}
-#page-body .notif .notif-body p{
-    direction: rtl;
-    margin: auto;
-}
-#page-body .notif .notif-header{
-    border: 1px solid black;
-    border-bottom: none;
-    width: 50%;
-    height: 3%;
-    margin: auto;
-    margin-bottom: 0px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    padding: 8px;
-    margin-top: 10px;
-    text-align: right;
-    background-color: #2196F3;
-    color: white;
-    
-}
-#page-body .notif .notif-header p{
-    
-margin: auto;
-    
-}
-#page-body .notif{
-    margin-bottom: 100px;
-}
-#page-body .admin-notif
-{
-    margin-bottom: 100px;
-}
-#page-body .admin-notif form{
-    border: 1px solid #2D343E;
-    border-collapse: collapse;
-    width: 794px;
-    margin: auto;
-    padding: auto;
-    vertical-align: super;
-    height: 200px;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    text-align: right;
-}
-#page-body .admin-notif form.hide{
-    display: none;
-}
-#page-body .admin-notif form textarea{
-    height: 100%;
-    width: 95%;
-    margin:auto;
-    border: none;
-    direction: rtl;
-    text-align: right;
-    vertical-align: text-top;
-    padding-bottom: 170px;
-    padding-right: 10px;
-    font-size: 22;
-    font-family: "yekan";
-    overflow: hidden;
-}
-#page-body .table table{
-    text-align: right;
-    border-radius: 10px;
-    margin: auto;
-    table-layout: fixed;
-    width: 50%;
-    background: white;
-}
 
-.table td{
-    border-right: 1px solid black;
-    border-spacing: 0;
-    border-bottom: 1px solid black;
-    overflow: hidden;
-    color: #6C7077;
-    text-align: center;
-    font-size: 14px;
-
-}
-.table th{
-    border-right: 1px solid black;
-    border-spacing: 0;
-    border-bottom: 1px solid black;
-    overflow: hidden;
-    color: white;
-    text-align: center;
-    font-size: 16px;
-    background-color: #2196F3;
-}
-#page-body .table tr td:first-child{
-    width: 10%;
-    padding: 6px;
-    border-left: 1px solid black;
-    
-}
-#page-body .table tr th:first-child{
-    width: 20%;
-    padding: 6px;
-    border-left: 1px solid black;
-    
-}
-
-#page-body .table tr:first-child th{
-    border-top: 1px solid black;
-    
-}
-#page-body .table tr:first-child th:first-child{
-    border-top-left-radius: 5px;
-    
-}
-#page-body .table tr:first-child th:last-child{
-    border-top-right-radius: 5px;
-    
-}
-
-#page-body .table tr:last-child td:last-child{
-    border-bottom-right-radius: 5px;
-    
-}
-#page-body .table tr:last-child td:first-child{
-    border-bottom-left-radius: 5px;
-    
-}
-#page-body .table tr td:not(:first-child){
-    width: 20%;
-    padding: 6px;
-}
-#page-body .table tr th:not(:first-child){
-    width: 20%;
-    padding: 6px;
-}
-#page-body .table{
-    margin: auto;
-    margin-top: 8px;
-    margin-bottom: 100px;
-}
-.sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0px; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0;
-    right: 0;
-    background-color: white;
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-    text-align: right;
-    background-color: cornflowerblue;
-    border-left: 1px solid #2D343E;
-}
-
-/* The navigation menu links */
-.sidenav #user-role{
-    padding: auto;
-    text-decoration: none;
-    font-size: 22px;
-    color: #2D343E;
-    display: block;
-    transition: 0.1s;
-    background-color: cornflowerblue;
-    height: 75px;
-    border-bottom: 2px groove #2D343E;
-}
-
-.sidenav #user-role img{
-    height: 44px;
-    width: 44px;
-    margin-right: 22px;
-    margin-left: 10px;
-}
-
-.sidenav img{
-    height: 44px;
-    width: 44px;
-}
-.sidenav a{
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #2D343E;
-    display: block;
-    transition: 0.1s;
-}
-.sidenav a:not(:first-child){
-    margin-right: 20px;
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover, .offcanvas a:focus{
-    color: #f1f1f1;
-    text-decoration: none;
-}
-
-/* Position and style the close button (top right corner) */
-.sidenav  #adicon {
-    position: absolute;
-    top: 0;
-    right: 5px;
-    font-size: 30px;
-    margin-left: 50px;
-    text-decoration: none;
-}
 
 @import "compass/css3";
 
-.table-editable {
-  position: relative;
-    margin: auto;
-    width: 80%;
-    margin-bottom: 80px;
-    
-  
-}
-.table-editable tr td th {
-  text-align: right;
-  
-}
 
-.table-editable td{
-    margin: auto;
-    overflow:hidden;
-}
-
-.table-editable table{
-       table-layout:fixed;
- 
-}
-
-.table-editable .sign{
-    text-align: center;
-    vertical-align: middle;
-}
-
-
-.table-remove {
-  color: #700;
-  cursor: pointer;
-  
-  &:hover {
-    color: #f00;
-  }
-}
-
-.table-up, .table-down {
-  color: #007;
-  cursor: pointer;
-  
-  &:hover {
-    color: #00f;
-  }
-}
-
-.table-add {
-  color: white;
-  cursor: pointer;
-  top: 8px;
-  right: 0;
-   border: 1px solid #2D343E;
-  padding: 10px;
-    background-color: green;
-    border-radius: 3px;
-    margin-left: 5px;
-  &:hover {
-    color: #0b0;
-  }
-}
 
 #search-message{
     display: none;
@@ -691,98 +302,15 @@ margin: auto;
 
 @media all and (max-width: 1024px) {
     
-   #menu #search input[type=text]:focus {
-    width: 90%;
-    height: 53px;
-    
-} 
-    .notif-close-icon{
-	width: 40px;
-	height: 40px;
-	font-size: 20;
-}
-    
-    
-    #page-body .admin-notif form textarea{
-    font-size: 50;
-}
-    
-    
-    #page-body .admin-notif form{
-    width: 90%;
-    height: 400px;
-}
-    .notif-add{
-        font-size: 40;
-    width: 90%;
-    margin: auto;
-    margin-bottom: 100px;
-    margin-top: 15px;
-}
-    #information-email #email-bar{
-    font-size: 40;
-    width: 90%;
-    margin: auto;
-    border: 2px black solid;
-}
-#information-email #submit-button{
-    font-size: 40;
-    width: 90%;
-    margin: auto;
-    margin-bottom: 100px;
-    margin-top: 15px;
-}
-    
-    #information-name #name-bar{
-        font-size: 40;
-        width: 90%;
-        margin: auto;
-        border: 2px black solid;
-        margin-bottom: 15px;
-    }
+
     
     #search-message{
     font-size: 40px;
 }
-    .sidenav  #adicon {
-    font-size: 50px;
 
-}
-    .sidenav a{
-        font-size: 25;
-    }
-    
-    
-    .table-add span {
-        display: none;
-    }
-    .table-add{
-        font-size: 25;
-    }
-    .table-editable table{
-      width: 80%;
-        }  
-    
-    #page-body .table table {
-    width: 95%;
-    margin:auto;
-    table-layout: fixed;
-    }
-    #page-body .notif .notif-body{
-    width: 90%;
-    font-size: 40px;
-    margin: auto;
-    margin-top: 15px;
-        padding: 25;
-        
-    }
-    #page-body .notif .notif-header{
-         width: 90%;
-    font-size: 40px;
-    margin: auto;
-    margin-top: 15px;
-        padding: 25;
-    }
+  
+   
+   
     #page-body .table-search input{
         font-size: 37;
         width: 95%;
@@ -795,22 +323,7 @@ margin: auto;
        
     }
     
-    #page-body .floor-table td{
-        font-size: 40;
-        padding: 20px;
-    }
-      #page-body .floor-table th{
-        font-size: 45;
-           padding: 20px
-    }
     
-       #page-body .floor-table table{
-           margin: auto;
-          width: 96%;
-           table-layout: fixed;
-           margin-left: 1.5%;
-           margin-bottom: 30px; 
-    }
     #page-body .card{
         margin: auto;
           width: 96%;
@@ -839,60 +352,17 @@ margin: auto;
     
     
   
-    #page-body #mobile-table{
-        display: none;
-        margin-bottom: 70px;
-    }
-    #page-body #week-table table{
-        width: 95%;
-        
-    }
     
-    #week-table td{
-    width: auto;
-    text-align: center;
-    overflow:hidden;
-    border: 1px solid #2D343E;
-    border-collapse: collapse;
-    color: #6C7077;
-    font-size: 12px;
-}
+   
     
     #menu{
         height: 100px;
  
     }
-    #menu #search input{
-        width: 20%;
-        margin-top: 23px;
-        font-size: 50px;
-        border-style: none;
-        margin-left: 25px;
-    }
     
-    #page-body{
-    }
-    #body-index #menu-item i{
-        display: none;
-    }
-    #body-index #menu-item{
-        width: 95%;
-        margin: auto;
-        margin-bottom: 15px;
-        text-align: center;
-        display:inline-block;
-        font-size: 45px;
-        border-radius: 8px;
-        height: auto;
-    }
-    #body-index #menu-item:last-child{
-        margin-bottom: 100px;
-    }
-    #body-index #menu-text{
-        text-align: center;
-        background-color: white;
-        display: inline;
-    }
+
+
+
      #body-index p{
         margin-top: 70px;
     }
@@ -946,60 +416,7 @@ margin: auto;
     margin-top: 60px;
   }
 
-   .form #error-message{
-    color: red;
-    font-size: 50px;
-        } 
-    .login-page{
-        width: 100%;
-        padding: auto;
-        margin: auto;
-        height: auto;
-    }
-    #login-head{
-        width: 100%;
-        font-size:60px;
-        text-align: center;
-        padding-top: 1%;
-        padding-bottom: 1%;
-    }
-    .form {
-  position: relative;
-  background-color: cornflowerblue;
-  max-width: 100%;
-  text-align: center;
-  margin :auto;
-
-  border-radius: 5px;
-}
-    .form #username,#password{
-  font-size: 42px;
-  padding:27px;
-        
-}
-.form #login-button {
-  font-family: "iransans";
-  text-transform: uppercase;
-  outline: 0;
-  background-color:green;
-  width: 100%;
-  border: 0;
-  padding: 30px;
-  color: #FFFFFF;
-  font-size: 36px;
-  -webkit-transition: all 0.3 ease;
-  transition: all 0.3 ease;
-  cursor: pointer;
-  margin: 4px;
-}
-.form .checkbox label{
-font-size: 30px;
-    margin-right: 20px;
-
-}
-    .form .checkbox input{
-        transform: scale(3);
-    }
+   
     #login-footer{
         font-size: 37px;
         height: auto;
@@ -1008,14 +425,8 @@ font-size: 30px;
         margin: auto;
         padding: auto;
     }
-    #body-login{
-        background-color: cornflowerblue;
-        overflow-y: auto;
-        margin-bottom: 100px;
-    }
-    #menu-item:hover{
-    opacity: 1;
-}
+ 
+   
     .modal-content {
         width: 100%;
     }
