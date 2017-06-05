@@ -19,6 +19,13 @@
           url("fonts/OpenSans-Bold.ttf") format("truetype"); 
 }
 
+#map {
+        height: 300px;
+        width: 80%;
+        margin: auto;
+          margin-bottom: 40px;
+       }
+
 #spinner-image {
     border-radius: 5px;
     cursor: pointer;
