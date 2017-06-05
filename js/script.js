@@ -48,10 +48,8 @@ $(document).ready(function(){
 }
     
     $("#login-footer").persiaNumber();
-    $(".card").persiaNumber();
     $(".farsi").persiaNumber();
     $(".contact").persiaNumber();
-    $(".spinner-price").persiaNumber();
     $("marquee").persiaNumber();
 });
 
