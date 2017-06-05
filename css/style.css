@@ -26,7 +26,7 @@
     animation-name: banner;
     animation-duration: 4s;
     animation-iteration-count: infinite;
-    opacity: 0.1;
+    opacity: 1;
     animation-direction: alternate-reverse;
 }
 #map {

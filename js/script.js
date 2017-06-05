@@ -21,7 +21,7 @@ var img=document.getElementById("spinner-image")
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
 
-$('body').on('click','img',function(){
+$('body').on('click','#spinner-image',function(){
     modal.style.display = "block";
     modalImg.src = this.src;
     captionText.innerHTML = this.alt;
@@ -130,7 +130,8 @@ function card_search(){
         var uluru = {lat: 35.695091, lng: 51.408036};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 14,
-          center: uluru
+          center: uluru,
+          zoomControl:false
         });
         var marker = new google.maps.Marker({
           position: uluru,
