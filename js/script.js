@@ -99,7 +99,6 @@ function card_search(){
     input=document.getElementById("myinput");
     filter=input.value.toUpperCase();
     message=document.getElementById("search-message");
-    message.persiaNumber();
     table_list=document.getElementsByClassName("card");
     for(i=0;i<table_list.length;i++){
         td_list=table_list[i].getElementsByTagName("p");

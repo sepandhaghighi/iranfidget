@@ -834,6 +834,7 @@ text-decoration: none;
 }
 #page-body .card .spinner-price{
     line-height: 3px;
+    font-family: "yekan";
 }
 #page-body .floor-tables{
     margin: auto;
