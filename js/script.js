@@ -125,10 +125,12 @@ function card_search(){
 
 
       function initMap() {
-        var uluru = {lat: 35.695091, lng: 51.408036};
+        var uluru = {lat: 35.694939, lng: 51.408007};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 14,
           center: uluru,
+          disableDefaultUI: true,
+          scrollwheel: false,
           zoomControl:false
         });
         var marker = new google.maps.Marker({
