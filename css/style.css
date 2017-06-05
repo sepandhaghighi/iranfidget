@@ -19,11 +19,23 @@
           url("fonts/OpenSans-Bold.ttf") format("truetype"); 
 }
 
+.wholesaler{
+    color: red;
+    margin: auto;
+    font-size: 14px;
+    animation-name: banner;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    opacity: 0.1;
+    animation-direction: alternate-reverse;
+}
 #map {
         height: 300px;
         width: 80%;
         margin: auto;
           margin-bottom: 40px;
+        border:2px solid black;
+        padding: 2px;
        }
 
 #spinner-image {
@@ -89,7 +101,10 @@
     from {transform:scale(0)} 
     to {transform:scale(1)}
 }
-
+@keyframes banner{
+    from {opacity: 0.1}
+    to{opacity: 1}
+}
 /* The Close Button */
 .close {
     position: absolute;
@@ -779,7 +794,7 @@ text-decoration: none;
 #page-body .contact{
     text-align: right;
     margin-right: 10%;
-    margin-top: 7%;
+    margin-top: 4%;
 }
 #page-body .contact a{
     text-decoration: none;
@@ -1501,4 +1516,7 @@ font-size: 30px;
         margin: auto;
         margin-bottom: 70px;
        }
+    .wholesaler{
+    font-size: 20px;
+}
 }
