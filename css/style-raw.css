@@ -271,23 +271,48 @@ marquee{
     margin-bottom: 70px;
     height: auto;
 }
+
+#page-body .card  a{
+    text-decoration: none;
+}
 #page-body .card img{
     width: 230px;
     height: 230px;
     border-radius: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 #page-body .card .spinner-title{
     background-color: #4FC3F7;
     margin-top: 0px;
+    margin-bottom: 0px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    padding: 3px;
 }
 #page-body .card .spinner-status{
 
     margin-bottom: 0px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    padding: 3px;
+    
 }
+#page-body .card .spinner-order{
+
+    margin-bottom: 0px;
+    margin-top: 0px;
+    border: 1px solid black;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius: 5px;
+    background-color:  rgb(171, 250, 250);
+    padding: 3px;
+}
+#page-body .card .spinner-order:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+
+
 .spinner-status.available{
         background-color: lawngreen;
 }
@@ -361,6 +386,10 @@ marquee{
            padding: 20px
     }
     #page-body .card .spinner-status{
+        font-size: 41;
+           padding: 20px
+    }
+    #page-body .card .spinner-order{
         font-size: 41;
            padding: 20px
     }
