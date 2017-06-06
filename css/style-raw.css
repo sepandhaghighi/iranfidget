@@ -19,6 +19,25 @@
           url("fonts/OpenSans-Bold.ttf") format("truetype"); 
 }
 
+
+.fidget-desc{
+    direction: rtl;
+    text-align: right;
+    text-align: justify;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom: 70px;
+}
+
+.fidget-desc p{
+    font-size: 15;
+}
+
+.fidget-desc a{
+    text-decoration: none;
+    font-size: 23;
+    cursor: pointer;
+}
 .wholesaler{
     color: red;
     margin: auto;
@@ -460,5 +479,8 @@ marquee{
        }
     .wholesaler{
     font-size: 20px;
+}
+    .fidget-desc p{
+    font-size: 22;
 }
 }
