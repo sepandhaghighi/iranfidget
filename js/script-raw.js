@@ -71,15 +71,13 @@ function myFunction() {
     var x = document.getElementById("myTopnav");
     var menu=document.getElementById("menu");
     var icon=document.getElementById("mobile-icon");
-    var image_script=document.getElementsByClassName("image-share");
     if (x.className === "topnav") {
         x.className += " responsive";
         menu.style.height="auto";
         icon.innerHTML='<i class="fa fa-bars fa-rotate-90" aria-hidden="true"></i>';
-        image_script.display="none";
     } else {
         x.className = "topnav";
-        menu.style.height="100px";
+        menu.style.height="80px";
         icon.innerHTML='<i class="fa fa-bars " aria-hidden="true"></i>';
     }
 }
