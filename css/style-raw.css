@@ -368,7 +368,7 @@ marquee{
     }
     
     #page-body .card.last{
-        margin-left: 1.5%;
+        margin-left: 2.5%;
     }
     #search-message{
     font-size: 40px;
@@ -392,10 +392,10 @@ marquee{
     
     #page-body .card{
         margin: auto;
-          width: 97%;
+          width: 95%;
            table-layout: fixed;
-           margin-left: 1.5%;
-        margin-right: 1.5%;
+           margin-left: 2.5%;
+        margin-right: 2.5%;
            margin-bottom: 70px; 
     }
        #page-body .card .spinner-title{
