@@ -64,7 +64,7 @@
         height: 300px;
         width: 80%;
         margin: auto;
-          margin-bottom: 110px;
+          margin-bottom: 120px;
         border:2px solid black;
         padding: 2px;
        }
@@ -545,7 +545,7 @@ marquee{
     #map {
         width: 100%;
         margin: auto;
-        margin-bottom:100px;
+        margin-bottom:120px;
        }
     .wholesaler{
     font-size: 17px;
