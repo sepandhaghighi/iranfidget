@@ -18,6 +18,9 @@
           url("fonts/OpenSans-Bold.woff") format("woff"),
           url("fonts/OpenSans-Bold.ttf") format("truetype"); 
 }
+.ref{
+    margin-bottom: 110px;
+}
 .cards{
     width: 80%;
     margin: 0px;
@@ -61,7 +64,7 @@
         height: 300px;
         width: 80%;
         margin: auto;
-          margin-bottom: 40px;
+          margin-bottom: 110px;
         border:2px solid black;
         padding: 2px;
        }
@@ -193,6 +196,7 @@ marquee{
     font-size: 17px;
     margin-top: 100px;
     height: auto;
+    opacity: 0.2;
 }
 
 .moduland{
@@ -282,13 +286,16 @@ marquee{
     margin-top: 10px;
     margin-left: 0px;
     margin-right: 1%;
-    margin-bottom:80px;
+    margin-bottom:50px;
     padding: 0px;
     height: auto;
     width: 19.2%;
     float: left;
 }
-#page-body .card.last{
+#page-body .card.last-row{
+    margin-bottom: 110px;
+}
+#page-body .card.last-col{
     margin-right: 0;
     margin-left: 0;
 }
@@ -376,7 +383,7 @@ marquee{
         margin: 0;
     }
     
-    #page-body .card.last{
+    #page-body .card.last-col{
         margin-left: 2.5%;
     }
     #search-message{
@@ -405,7 +412,7 @@ marquee{
            table-layout: fixed;
            margin-left: 2.5%;
         margin-right: 2.5%;
-           margin-bottom: 90px; 
+           margin-bottom: 100px; 
     }
        #page-body .card .spinner-title{
         font-size: 45;
@@ -538,7 +545,7 @@ marquee{
     #map {
         width: 100%;
         margin: auto;
-        margin-bottom: 70px;
+        margin-bottom:100px;
        }
     .wholesaler{
     font-size: 17px;
