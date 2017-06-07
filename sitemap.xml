@@ -8,19 +8,25 @@
 
 <url>
   <loc>http://www.iranfidget.ir/</loc>
-  <lastmod>2017-06-04T21:46:08+00:00</lastmod>
+  <lastmod>2017-06-07T08:50:21+00:00</lastmod>
   <changefreq>always</changefreq>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>http://www.iranfidget.ir/index.html</loc>
-  <lastmod>2017-06-04T21:46:08+00:00</lastmod>
+  <lastmod>2017-06-07T08:50:21+00:00</lastmod>
   <changefreq>always</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://www.iranfidget.ir/contact.html</loc>
-  <lastmod>2017-06-04T21:46:08+00:00</lastmod>
+  <lastmod>2017-06-07T08:50:21+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.iranfidget.ir/fidget.html</loc>
+  <lastmod>2017-06-07T08:50:21+00:00</lastmod>
   <changefreq>always</changefreq>
   <priority>0.80</priority>
 </url>
