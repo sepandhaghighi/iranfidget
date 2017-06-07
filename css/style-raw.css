@@ -287,8 +287,8 @@ marquee{
     text-decoration: none;
 }
 #page-body .card img{
-    width: 230px;
-    height: 230px;
+    width: 80%;
+    height: 25%;
     border-radius: 0px;
     margin-top: 8px;
     margin-bottom: 0px;
