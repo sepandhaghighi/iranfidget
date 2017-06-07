@@ -18,7 +18,12 @@
           url("fonts/OpenSans-Bold.woff") format("woff"),
           url("fonts/OpenSans-Bold.ttf") format("truetype"); 
 }
-
+.cards{
+    width: 80%;
+    margin: 0px;
+    margin-left: 10%;
+    
+}
 .fidget-desc{
     direction: rtl;
     text-align: right;
@@ -266,11 +271,18 @@ marquee{
     border-radius: 5px;
     display: inline-block;
     margin-top: 10px;
-    margin-left: 30px;
+    margin-left: 0px;
+    margin-right: 1%;
     margin-bottom: 70px;
+    padding: 0px;
     height: auto;
+    width: 19.2%;
+    float: left;
 }
-
+#page-body .card.last{
+    margin-right: 0;
+    margin-left: 0;
+}
 #page-body .card  a{
     text-decoration: none;
 }
@@ -278,7 +290,7 @@ marquee{
     width: 230px;
     height: 230px;
     border-radius: 0px;
-    margin-top: 0px;
+    margin-top: 8px;
     margin-bottom: 0px;
 }
 #page-body .card .spinner-title{
@@ -350,8 +362,14 @@ marquee{
 
 @media all and (max-width: 1024px) {
     
-
+    .cards{
+        width: auto;
+        margin: 0;
+    }
     
+    #page-body .card.last{
+        margin-left: 1.5%;
+    }
     #search-message{
     font-size: 40px;
 }
@@ -374,9 +392,10 @@ marquee{
     
     #page-body .card{
         margin: auto;
-          width: 96%;
+          width: 97%;
            table-layout: fixed;
            margin-left: 1.5%;
+        margin-right: 1.5%;
            margin-bottom: 70px; 
     }
        #page-body .card .spinner-title{
@@ -525,4 +544,6 @@ marquee{
         width: 100%;
     
 }
+    
+    
 }
