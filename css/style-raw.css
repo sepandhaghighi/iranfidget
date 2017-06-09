@@ -272,8 +272,14 @@ marquee{
 
 #page-body .contact{
     text-align: right;
-    margin-right: 10%;
+    width: 80%;
+    margin: auto;
     margin-top: 4%;
+}
+
+#page-body .contact .order-desc{
+    border: 2px solid red;
+    padding: 4px;
 }
 #page-body .contact a{
     text-decoration: none;
@@ -329,7 +335,7 @@ marquee{
     margin-top: 0px;
     border-bottom-left-radius:5px;
     border-bottom-right-radius: 5px;
-    background-color:  rgb(171, 250, 250);
+    background-color: lawngreen;
     padding: 3px;
 }
 #page-body .card .spinner-order:hover{
@@ -528,8 +534,11 @@ marquee{
     }
     #page-body .contact{
     font-size: 35;
-        margin-right: 5%;
-        margin-bottom: 70px;
+    width: auto;
+    text-align: justify,right;
+    margin-right: 2%;
+        margin-left: 2%;
+    margin-bottom: 70px;
 }
     .fa.fa-address-card{
         display: none;
