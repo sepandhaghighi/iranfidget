@@ -336,21 +336,23 @@ marquee{
     margin-top: 0px;
     border-bottom-left-radius:5px;
     border-bottom-right-radius: 5px;
-    background-color: lawngreen;
     padding: 3px;
 }
-#page-body .card .spinner-order:hover{
+#page-body .card .spinner-order.available:hover{
     cursor: pointer;
     opacity: 0.5;
 }
 
 
 
-.spinner-status.available{
+.spinner-order.available{
         background-color: lawngreen;
 }
-.spinner-status.not-available{
+.spinner-order.not-available{
         background-color: red;
+}
+.spinner-order.soon{
+    background-color:bisque;
 }
 #page-body .card .spinner-price{
     line-height: 3px;
