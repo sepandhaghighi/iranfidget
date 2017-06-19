@@ -358,6 +358,10 @@ marquee{
     line-height: 3px;
     font-family: "yekan";
 }
+
+#page-body .card .spinner-price .prev-price{
+    text-decoration: line-through;
+}
 .table-search input{
     font-size: 20px;
     width: 80%;
