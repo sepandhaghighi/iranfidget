@@ -354,14 +354,18 @@ marquee{
 .spinner-order.soon{
     background-color:bisque;
 }
+#page-body .card .spinner-price  .prev-price{
+    text-decoration: line-through;
+    color: red;
+}
+
 #page-body .card .spinner-price{
     line-height: 3px;
     font-family: "yekan";
+    color: black;
 }
 
-#page-body .card .spinner-price .prev-price{
-    text-decoration: line-through;
-}
+
 .table-search input{
     font-size: 20px;
     width: 80%;
