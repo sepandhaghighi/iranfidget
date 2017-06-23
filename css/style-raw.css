@@ -63,7 +63,11 @@
         color: red;
     text-decoration: none;
     cursor: pointer;
+    display: inline-block;
+    line-height: 1em;
+
 }
+
 #map {
         height: 300px;
         width: 80%;
@@ -572,9 +576,10 @@ marquee{
         margin-bottom:120px;
        }
     .wholesaler{
-    font-size: 17px;
+    font-size: 22px;
         width: 95%;
 }
+
     .fidget-desc{
 
     margin-right: 5%;
