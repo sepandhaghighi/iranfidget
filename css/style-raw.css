@@ -362,6 +362,7 @@ marquee{
 .spinner-order.soon{
     background-color:bisque;
 }
+
 #page-body .card .spinner-price  .prev-price{
     text-decoration: line-through;
     color: red;
