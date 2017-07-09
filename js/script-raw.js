@@ -103,7 +103,7 @@ function card_search(){
         instance=new Mark(table_list[i]);
         instance.unmark(instance.innerHTML);
         for (j=0;j<td_list.length;j++){
-            if(td_list[j].innerHTML.toUpperCase().indexOf(filter)>-1){
+            if(td_list[j].textContent.toUpperCase().indexOf(filter)>-1){
                 instance.mark(filter,options);
                 table_list[i].style.display="";
                 counter=counter+1;
