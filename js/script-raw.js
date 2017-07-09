@@ -38,7 +38,7 @@ span.onclick = function() {
 
 
 $(document).ready(function(){
-    var footer;
+    var footer,i,j,len;
     footer=document.getElementById("login-footer");
     $(".second-class").persiaNumber();
      
@@ -46,6 +46,17 @@ $(document).ready(function(){
         footer.style.opacity="0.2";
     
 }
+    
+    table_list=document.getElementsByClassName("card");
+    len=table_list.length;
+    for(i=0;i<len;i++){
+        if (((i+1)%5)==0){
+            table_list[i].classList.add("last-col");
+        }
+        if ((len==i+1)){
+            table_list[i].classList.add("last-row");
+        }
+    }
     
     $("#login-footer").persiaNumber();
     $(".farsi").persiaNumber();
@@ -98,6 +109,7 @@ function card_search(){
     filter=input.value.toUpperCase();
     message=document.getElementById("search-message");
     table_list=document.getElementsByClassName("card");
+    $(".last-col").removeClass("last-col");
     for(i=0;i<table_list.length;i++){
         td_list=table_list[i].getElementsByTagName("p");
         instance=new Mark(table_list[i]);
@@ -107,6 +119,10 @@ function card_search(){
                 instance.mark(filter,options);
                 table_list[i].style.display="";
                 counter=counter+1;
+                if ((counter%5)==0){
+                    table_list[i].classList.add("last-col");
+                }
+                
                 break;
             } 
             else{
