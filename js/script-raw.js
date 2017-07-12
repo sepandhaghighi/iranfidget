@@ -103,7 +103,7 @@ function myFunction() {
 
 
 function card_search(){
-    var input,filter,i,j,table_list,td_list,counter,message,instance;
+    var input,filter,i,j,table_list,td_list,counter,message,instance,alt;
     counter=0;
     input=document.getElementById("myinput");
     filter=input.value.toUpperCase();
@@ -112,10 +112,11 @@ function card_search(){
     $(".last-col").removeClass("last-col");
     for(i=0;i<table_list.length;i++){
         td_list=table_list[i].getElementsByTagName("p");
+        alt=table_list[i].getElementsByTagName("img")[0].alt;
         instance=new Mark(table_list[i]);
         instance.unmark(instance.innerHTML);
         for (j=0;j<td_list.length;j++){
-            if(td_list[j].textContent.toUpperCase().indexOf(filter)>-1){
+            if((td_list[j].textContent.toUpperCase().indexOf(filter)>-1)||(alt.toUpperCase().indexOf(filter)>-1)){
                 instance.mark(filter,options);
                 table_list[i].style.display="";
                 counter=counter+1;
