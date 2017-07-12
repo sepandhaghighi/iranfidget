@@ -24,7 +24,7 @@ var captionText = document.getElementById("caption");
 $('body').on('click','#spinner-image',function(){
     modal.style.display = "block";
     modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
+    captionText.innerHTML = this.title;
 })
 
 
