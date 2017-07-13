@@ -650,12 +650,22 @@ marquee{
         width: 100%;
     
 }
+    .modal-content{
+        width: 96%;
+        max-width: none;
+    }
     .modal-random .modal-content{
         width: 96%;
+        max-width: none;
     }
     .modal-body img{
     width: 90%;
-    height: 70%;
+    height: 60%;
+}
+    .close-random {
+
+    font-size: 45px;
+
 }
     
     
