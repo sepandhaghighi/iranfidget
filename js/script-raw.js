@@ -75,7 +75,7 @@ $(document).ready(function(){
     var selected_spinner=table_list[spinner_select];
     modal_image.src=selected_spinner.getElementsByTagName("img")[0].src;
     modal_footer.innerHTML=selected_spinner.getElementsByTagName("img")[0].title;
-    modal_price.innerHTML=selected_spinner.getElementsByTagName('p')[1].innerHTML;
+    modal_price.innerHTML=selected_spinner.getElementsByTagName('p')[2].innerHTML;
     modal_random.style.display="block";
     }
     for(i=0;i<len;i++){
