@@ -20,23 +20,19 @@ var modal = document.getElementById('myModal');
 var img=document.getElementById("spinner-image")
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
+var modal_flag=Math.floor((Math.random() * 10) + 1);
+var spinner_select=Math.floor(Math.random()*6);
+var modal_random = document.getElementById('modal-random');
+var modal_image=document.getElementsByClassName("modal-body")[0].getElementsByTagName("img")[0];
+var modal_footer=document.getElementsByClassName("modal-footer")[0].getElementsByTagName("h3")[0];
 
-var modal = document.getElementById('modal-random');
 
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close-random")[0];
 
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-    modal.style.display = "block";
-}
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
-    modal.style.display = "none";
+    modal_random.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the modal, close it
@@ -74,6 +70,12 @@ $(document).ready(function(){
     
     table_list=document.getElementsByClassName("card");
     len=table_list.length;
+    if (modal_flag<6){
+    var selected_spinner_image=table_list[spinner_select].getElementsByTagName("img")[0]
+    modal_image.src=selected_spinner_image.src;
+    modal_footer.innerHTML=selected_spinner_image.title;
+    modal_random.style.display="block";
+    }
     for(i=0;i<len;i++){
         if (((i+1)%5)==0){
             table_list[i].classList.add("last-col");

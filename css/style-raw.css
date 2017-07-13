@@ -136,7 +136,10 @@
 }
 
 .modal-body {padding: 2px 16px;}
-
+.modal-body img{
+    width: 80%;
+    height: 60%;
+}
 .modal-footer {
     padding: 2px 16px;
     background-color: #5cb85c;
@@ -646,6 +649,13 @@ marquee{
         height: 30%;
         width: 100%;
     
+}
+    .modal-random .modal-content{
+        width: 96%;
+    }
+    .modal-body img{
+    width: 90%;
+    height: 70%;
 }
     
     
