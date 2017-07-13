@@ -25,6 +25,7 @@ var spinner_select=Math.floor(Math.random()*6);
 var modal_random = document.getElementById('modal-random');
 var modal_image=document.getElementsByClassName("modal-body")[0].getElementsByTagName("img")[0];
 var modal_footer=document.getElementsByClassName("modal-footer")[0].getElementsByTagName("h3")[0];
+var modal_price=document.getElementsByClassName("modal-footer")[0].getElementsByTagName("h2")[0];
 
 
 var span = document.getElementsByClassName("close-random")[0];
@@ -71,9 +72,10 @@ $(document).ready(function(){
     table_list=document.getElementsByClassName("card");
     len=table_list.length;
     if (modal_flag<6){
-    var selected_spinner_image=table_list[spinner_select].getElementsByTagName("img")[0]
-    modal_image.src=selected_spinner_image.src;
-    modal_footer.innerHTML=selected_spinner_image.title;
+    var selected_spinner=table_list[spinner_select];
+    modal_image.src=selected_spinner.getElementsByTagName("img")[0].src;
+    modal_footer.innerHTML=selected_spinner.getElementsByTagName("img")[0].title;
+    modal_price.innerHTML=selected_spinner.getElementsByTagName('p')[1].innerHTML;
     modal_random.style.display="block";
     }
     for(i=0;i<len;i++){
