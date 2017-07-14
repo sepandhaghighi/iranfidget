@@ -31,8 +31,73 @@ var modal_price_second=document.getElementsByClassName("modal-footer")[0].getEle
 
 var span = document.getElementsByClassName("close-random")[0];
 
-$("#example_id").ionRangeSlider();
 // When the user clicks on <span> (x), close the modal
+
+var price_sorter = function (data) {
+    var i,j,table_list,price,counter,message,from,to,last_object;
+    from = parseInt(data.from);
+    to = parseInt(data.to);
+    counter=0;
+    message=document.getElementById("search-message");
+    table_list=document.getElementsByClassName("card");
+    $(".last-col").removeClass("last-col");
+    for(i=0;i<table_list.length;i++){
+        price=parseInt(table_list[i].getElementsByTagName("p")[2].innerHTML);
+        if((price!=NaN)&&(price*1000<to)&&(price*1000>from)){
+                table_list[i].style.display="";
+                last_object=table_list[i]
+                counter=counter+1;
+                if ((counter%5)==0){
+                    table_list[i].classList.add("last-col");
+                }
+                
+            } 
+            else{
+                table_list[i].style.display="none";
+                
+            }
+        
+    }
+    if (from==0&&to==150000){
+        for(i=0;i<table_list.length;i++){
+            table_list[i].style.display="";
+        if (((i+1)%5)==0){
+            table_list[i].classList.add("last-col");
+        }
+        if ((table_list.length==i+1)){
+            table_list[i].classList.add("last-row");
+        }
+    }
+    }
+    else if (counter==0){
+        message.style.display="block";
+    }
+    else{
+        message.style.display="none";
+    }
+    if (last_object!=undefined){
+    last_object.classList.add("last-row");
+    }
+};
+$("#range").ionRangeSlider({
+            hide_min_max: true,
+            keyboard: true,
+            min: 0,
+            max: 150000,
+            from: 0,
+            to: 150000,
+            type: 'double',
+            step: 2000,
+            prefix: "",
+            grid: true,
+            onChange: price_sorter,
+            hide_from_to:true,
+            prettify_separator:",",
+            prettify_enabled:true,
+            postfix:"تومان",
+            max_postfix:"تومان"
+        });
+
 span.onclick = function() {
     modal_random.style.display = "none";
 }

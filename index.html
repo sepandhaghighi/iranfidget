@@ -1,10 +1,10 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <link href="css/style-raw.css" rel="stylesheet" type="text/css">
         <link href="css/awsome/css/font-awesome.min.css" rel=stylesheet>
         <link href="css/ion.rangeSlider.css" rel=stylesheet>
          <link href="css/ion.rangeSlider.skinHTML5.css" rel=stylesheet>
+        <link href="css/style-raw.css" rel="stylesheet" type="text/css">
         <title>فروشگاه ایران فیجت</title>
         <meta name="google-site-verification" content="SLCWzXcc7eRsUSl3hogpZFHc_0E3_AIGyl9JQR8BaJE" />
         <meta name="description" content="تولیدکننده و عرضه کننده انواع فیجت های فلزی، پلاستیکی، چوبی، سفارشی، تبلیغاتی
@@ -40,9 +40,12 @@
 همراه: 09210203985</marquee> 
         <div id="page-body">
             <div class="table-search">
-                <input type="text" name="table-search" placeholder="جستجو  " id="myinput" onkeyup="card_search();">
+                <input type="text" name="table-search" placeholder="جستجو  " id="myinput" onkeyup="card_search();" class="farsi">
             </div>
-            <input type="text" id="range" name="example_name" value="" />
+            <div id="slider">
+                <input type="text" id="range" name="example_name" value=""  onclick='' />
+            </div>
+            
             <div class="wholesaler">
                 <a href="contact.html"><h1>برای اطلاع از قیمت های عمده، تماس بگیرید</h1></a>
                 <h1> برای مشاهده ویدیو هر اسپینر برروی علامت  <span><i class="fa fa-video-camera" aria-hidden="true"></i></span> کلیک کنید</h1>
@@ -347,31 +350,21 @@
         
         
         
-        <script src="js/bootstrap.min.js"></script>
+        
         
         <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery-ui.min.js"></script>
         <script src="js/underscore.js"></script>
         <script src="js/persianumber.js"></script>
-        <script src="js/script-raw.js"></script>
         <script src="js/ion.rangeSlider.min.js"></script>
+        <script src="js/script-raw.js"></script>
         <script src="js/mark.min.js" charset="UTF-8"></script>
         <script>
 
     $(function () {
 
-        $("#range").ionRangeSlider({
-            hide_min_max: true,
-            keyboard: true,
-            min: 0,
-            max: 5000,
-            from: 1000,
-            to: 4000,
-            type: 'double',
-            step: 1,
-            prefix: "$",
-            grid: true
-        });
+        
 
     });
 </script>

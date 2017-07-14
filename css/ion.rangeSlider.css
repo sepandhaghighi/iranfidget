@@ -6,8 +6,15 @@
 /* =====================================================================================================================
 // RangeSlider */
 
+@font-face {
+    font-family: "yekan";
+    src:url("fonts/Yekan.eot?#") format("eot"),    
+          url("fonts/Yekan.woff") format("woff"),
+          url("fonts/Yekan.ttf") format("truetype"); 
+}
 .irs {
     position: relative; display: block;
+    font-family: "yekan";
     -webkit-touch-callout: none;
     -webkit-user-select: none;
      -khtml-user-select: none;
@@ -106,7 +113,8 @@
         bottom: 0; left: 0;
         white-space: nowrap;
         text-align: center;
-        font-size: 9px; line-height: 9px;
+        font-family: "yekan";
+        font-size: 16px; line-height: 9px;
         padding: 0 3px;
         color: #000;
     }
@@ -114,7 +122,7 @@
 .irs-disable-mask {
     position: absolute; display: block;
     top: 0; left: -1%;
-    width: 102%; height: 100%;
+    width: 80%; height: 100%;
     cursor: default;
     background: rgba(0,0,0,0.0);
     z-index: 2;

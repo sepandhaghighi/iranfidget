@@ -18,6 +18,12 @@
           url("fonts/OpenSans-Bold.woff") format("woff"),
           url("fonts/OpenSans-Bold.ttf") format("truetype"); 
 }
+#slider{
+    width: 80%;
+    text-align: center;
+    margin:auto;
+    padding: auto;
+}
 .ref{
     margin-bottom: 110px;
 }
@@ -675,6 +681,17 @@ marquee{
     font-size: 45px;
 
 }
+    #slider{
+    width: 94%;
+    text-align: center;
+    margin:auto;
+    padding: auto;
+}
+    .irs-grid-text {
+
+        font-size: 30px; line-height: 9px;
+
+    }
     
     
 }
