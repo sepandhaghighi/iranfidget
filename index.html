@@ -3,6 +3,8 @@
         <meta charset="UTF-8">
         <link href="css/style-raw.css" rel="stylesheet" type="text/css">
         <link href="css/awsome/css/font-awesome.min.css" rel=stylesheet>
+        <link href="css/ion.rangeSlider.css" rel=stylesheet>
+         <link href="css/ion.rangeSlider.skinHTML5.css" rel=stylesheet>
         <title>فروشگاه ایران فیجت</title>
         <meta name="google-site-verification" content="SLCWzXcc7eRsUSl3hogpZFHc_0E3_AIGyl9JQR8BaJE" />
         <meta name="description" content="تولیدکننده و عرضه کننده انواع فیجت های فلزی، پلاستیکی، چوبی، سفارشی، تبلیغاتی
@@ -40,7 +42,7 @@
             <div class="table-search">
                 <input type="text" name="table-search" placeholder="جستجو  " id="myinput" onkeyup="card_search();">
             </div>
-         
+            <input type="text" id="range" name="example_name" value="" />
             <div class="wholesaler">
                 <a href="contact.html"><h1>برای اطلاع از قیمت های عمده، تماس بگیرید</h1></a>
                 <h1> برای مشاهده ویدیو هر اسپینر برروی علامت  <span><i class="fa fa-video-camera" aria-hidden="true"></i></span> کلیک کنید</h1>
@@ -346,12 +348,33 @@
         
         
         <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery-ui.min.js"></script>
+        
         <script src="js/jquery.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
         <script src="js/underscore.js"></script>
         <script src="js/persianumber.js"></script>
         <script src="js/script-raw.js"></script>
+        <script src="js/ion.rangeSlider.min.js"></script>
         <script src="js/mark.min.js" charset="UTF-8"></script>
+        <script>
+
+    $(function () {
+
+        $("#range").ionRangeSlider({
+            hide_min_max: true,
+            keyboard: true,
+            min: 0,
+            max: 5000,
+            from: 1000,
+            to: 4000,
+            type: 'double',
+            step: 1,
+            prefix: "$",
+            grid: true
+        });
+
+    });
+</script>
          <script class="image-share" type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5935156a27889f0d"></script>  
         <script type='text/javascript' data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: '6f530fc3-6b45-4ace-b3ba-d50ad63e1728', f: true }); done = true; } }; })();</script>
     </body>

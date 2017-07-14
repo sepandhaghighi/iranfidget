@@ -31,7 +31,7 @@ var modal_price_second=document.getElementsByClassName("modal-footer")[0].getEle
 
 var span = document.getElementsByClassName("close-random")[0];
 
-
+$("#example_id").ionRangeSlider();
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
     modal_random.style.display = "none";
