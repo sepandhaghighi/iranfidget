@@ -25,7 +25,8 @@ var spinner_select=Math.floor(Math.random()*6);
 var modal_random = document.getElementById('modal-random');
 var modal_image=document.getElementsByClassName("modal-body")[0].getElementsByTagName("img")[0];
 var modal_footer=document.getElementsByClassName("modal-footer")[0].getElementsByTagName("h3")[0];
-var modal_price=document.getElementsByClassName("modal-footer")[0].getElementsByTagName("h2")[0];
+var modal_price_first=document.getElementsByClassName("modal-footer")[0].getElementsByTagName("h2")[0];
+var modal_price_second=document.getElementsByClassName("modal-footer")[0].getElementsByTagName("h2")[1];
 
 
 var span = document.getElementsByClassName("close-random")[0];
@@ -75,7 +76,8 @@ $(document).ready(function(){
     var selected_spinner=table_list[spinner_select];
     modal_image.src=selected_spinner.getElementsByTagName("img")[0].src;
     modal_footer.innerHTML=selected_spinner.getElementsByTagName("img")[0].title;
-    modal_price.innerHTML=selected_spinner.getElementsByTagName('p')[2].innerHTML;
+    modal_price_first.innerHTML=selected_spinner.getElementsByTagName('p')[1].innerHTML;
+    modal_price_second.innerHTML=selected_spinner.getElementsByTagName('p')[2].innerHTML;
     modal_random.style.display="block";
     }
     for(i=0;i<len;i++){
