@@ -41,10 +41,11 @@ var price_sorter = function (data) {
     message=document.getElementById("search-message");
     table_list=document.getElementsByClassName("card");
     $(".last-col").removeClass("last-col");
+    $(".last-row").removeClass("last-row");
     for(i=0;i<table_list.length;i++){
         price=parseInt(table_list[i].getElementsByTagName("p")[2].innerHTML);
         if((price!=NaN)&&(price*1000<to)&&(price*1000>from)){
-                table_list[i].style.display="";
+                table_list[i].style.display="block";
                 last_object=table_list[i]
                 counter=counter+1;
                 if ((counter%5)==0){
