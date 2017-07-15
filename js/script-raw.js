@@ -27,19 +27,17 @@ var modal_image=document.getElementsByClassName("modal-body")[0].getElementsByTa
 var modal_footer=document.getElementsByClassName("modal-footer")[0].getElementsByTagName("h3")[0];
 var modal_price_first=document.getElementsByClassName("modal-footer")[0].getElementsByTagName("h2")[0];
 var modal_price_second=document.getElementsByClassName("modal-footer")[0].getElementsByTagName("h2")[1];
-
-
-var span = document.getElementsByClassName("close-random")[0];
-
-// When the user clicks on <span> (x), close the modal
+var span_random = document.getElementsByClassName("close-random")[0];
+var message=document.getElementById("search-message");
+var table_list=document.getElementsByClassName("card");
+var span = document.getElementsByClassName("close")[0];
+var footer=document.getElementById("login-footer");
 
 var price_sorter = function (data) {
-    var i,j,table_list,price,counter,message,from,to,last_object;
+    var i,j,price,counter,from,to,last_object;
     from = parseInt(data.from);
     to = parseInt(data.to);
     counter=0;
-    message=document.getElementById("search-message");
-    table_list=document.getElementsByClassName("card");
     $(".last-col").removeClass("last-col");
     $(".last-row").removeClass("last-row");
     for(i=0;i<table_list.length;i++){
@@ -88,7 +86,7 @@ $("#range").ionRangeSlider({
             from: 0,
             to: 150000,
             type: 'double',
-            step: 2000,
+            step: 1000,
             prefix: "",
             grid: true,
             onChange: price_sorter,
@@ -99,14 +97,13 @@ $("#range").ionRangeSlider({
             max_postfix:"تومان"
         });
 
-span.onclick = function() {
+span_random.onclick = function() {
     modal_random.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == modal) {
-        modal.style.display = "none";
+        modal_random.style.display = "none";
     }
 }
 
@@ -117,8 +114,6 @@ $('body').on('click','#spinner-image',function(){
 })
 
 
-// Image modal
-var span = document.getElementsByClassName("close")[0];
 
 span.onclick = function() { 
   modal.style.display = "none";
@@ -127,8 +122,8 @@ span.onclick = function() {
 
 
 $(document).ready(function(){
-    var footer,i,j,len;
-    footer=document.getElementById("login-footer");
+    var i,j,len;
+    
     $(".second-class").persiaNumber();
      
     if ($(document).height() > $(window).height()) {
@@ -162,8 +157,6 @@ $(document).ready(function(){
 });
 
 $(window).scroll(function() {
-    var footer;
-    footer=document.getElementById("login-footer");
    if ((window.innerHeight + window.scrollY+90) >= document.body.scrollHeight) {
        footer.style.opacity="1";
    }
@@ -200,13 +193,12 @@ function myFunction() {
 
 
 function card_search(){
-    var input,filter,i,j,table_list,td_list,counter,message,instance,alt;
+    var input,filter,i,j,td_list,counter,instance,alt,last_object;
     counter=0;
     input=document.getElementById("myinput");
     filter=input.value.toUpperCase();
-    message=document.getElementById("search-message");
-    table_list=document.getElementsByClassName("card");
     $(".last-col").removeClass("last-col");
+    $(".last-row").removeClass("last-row");
     for(i=0;i<table_list.length;i++){
         td_list=table_list[i].getElementsByTagName("p");
         alt=table_list[i].getElementsByTagName("img")[0].alt;
@@ -216,11 +208,11 @@ function card_search(){
             if((td_list[j].textContent.toUpperCase().indexOf(filter)>-1)||(alt.toUpperCase().indexOf(filter)>-1)){
                 instance.mark(filter,options);
                 table_list[i].style.display="";
+                last_object=table_list[i]
                 counter=counter+1;
                 if ((counter%5)==0){
                     table_list[i].classList.add("last-col");
                 }
-                
                 break;
             } 
             else{
@@ -235,9 +227,10 @@ function card_search(){
     else{
         message.style.display="none";
     }
+    if (last_object!=undefined){
+        last_object.classList.add("last-row");
+    }
 }
-
-
       function initMap() {
         var uluru = {lat: 35.694939, lng: 51.408007};
         var map = new google.maps.Map(document.getElementById('map'), {
