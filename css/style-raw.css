@@ -681,6 +681,9 @@ marquee{
     font-size: 45px;
 
 }
+    .modal-random{
+        margin-top: 40px;
+    }
     #slider{
     width: 94%;
     text-align: center;
@@ -689,7 +692,9 @@ marquee{
 }
     .irs-grid-text {
 
-        font-size: 20px; line-height: 9px;
+        font-size: 17px; line-height: 9px;
+        margin-left: 10px;
+        margin-right: 10px;
 
     }
     
