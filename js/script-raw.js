@@ -59,12 +59,10 @@ var price_sorter = function (data) {
     }
     if (from==0&&to==150000){
         for(i=0;i<table_list.length;i++){
-            table_list[i].style.display="";
+            table_list[i].style.display="block";
+            last_object=table_list[i]
         if (((i+1)%5)==0){
             table_list[i].classList.add("last-col");
-        }
-        if ((table_list.length==i+1)){
-            table_list[i].classList.add("last-row");
         }
     }
     }
