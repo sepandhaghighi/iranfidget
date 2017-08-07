@@ -120,7 +120,7 @@ span.onclick = function() {
 
 
 $(document).ready(function(){
-    var i,j,len;
+    var i,j,len,discount,p_list;
     
     $(".second-class").persiaNumber();
      
@@ -140,13 +140,19 @@ $(document).ready(function(){
     modal_random.style.display="block";
     }
     for(i=0;i<len;i++){
+        p_list=table_list[i].getElementsByTagName("p");
+        discount=Math.round((1-(parseInt(p_list[2].innerHTML)/parseInt(p_list[1].innerHTML)))*100);
+        if (isNaN(discount)){
+            p_list[3].innerHTML=p_list[3].innerHTML+"&nbsp;"+"--";
+        }
+        else{
+        p_list[3].innerHTML=p_list[3].innerHTML+"&nbsp;"+(+discount.toString()+"%"+"-");
+        }
         if (((i+1)%5)==0){
             table_list[i].classList.add("last-col");
         }
-        if ((len==i+1)){
-            table_list[i].classList.add("last-row");
-        }
     }
+    table_list[len-1].classList.add("last-row");
     
     $("#login-footer").persiaNumber();
     $(".farsi").persiaNumber();

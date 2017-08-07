@@ -18,6 +18,14 @@
           url("fonts/OpenSans-Bold.woff") format("woff"),
           url("fonts/OpenSans-Bold.ttf") format("truetype"); 
 }
+.discount{
+    border:2px red solid;
+    width: 25%;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 6px;
+    border-radius: 50px;
+}
 #slider{
     width: 80%;
     text-align: center;
@@ -473,6 +481,11 @@ marquee{
 
 
 @media all and (max-width: 1024px) {
+    
+    .discount{
+    padding: 30px;
+
+}
     
     .cards{
         width: auto;
