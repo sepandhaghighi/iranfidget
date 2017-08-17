@@ -698,6 +698,7 @@ marquee{
         margin-top: 40px;
     }
     #slider{
+    display: none;
     width: 94%;
     text-align: center;
     margin:auto;
