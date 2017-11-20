@@ -58,6 +58,7 @@ var price_sorter = function (data) {
         
     }
     if (from==0&&to==150000){
+        message.style.display="none";
         for(i=0;i<table_list.length;i++){
             table_list[i].style.display="block";
             last_object=table_list[i]
@@ -137,7 +138,7 @@ $(document).ready(function(){
     modal_footer.innerHTML=selected_spinner.getElementsByTagName("img")[0].title;
     modal_price_first.innerHTML=selected_spinner.getElementsByTagName('p')[1].innerHTML;
     modal_price_second.innerHTML=selected_spinner.getElementsByTagName('p')[2].innerHTML;
-    modal_random.style.display="block";
+    //modal_random.style.display="block";
     }
     for(i=0;i<len;i++){
         p_list=table_list[i].getElementsByTagName("p");
